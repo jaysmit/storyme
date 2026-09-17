@@ -191,7 +191,7 @@
   var STYLES = [
     { id: 'glow', name: 'Enchanted glow', ages: '3–10', mood: 'A premium modern picture book', img: 'assets/img/style-enchanted-glow', desc: 'Our signature look. Rich painted light, golden sparkles and starry skies — pure bedtime wonder.' },
     { id: 'watercolour', name: 'Watercolour dream', ages: '0–5', mood: 'A lullaby in pictures', img: 'assets/img/style-watercolour', desc: 'Soft washes and pastel skies that melt into the page. Gentle, calm and dreamy.' },
-    { id: 'fable', name: 'Classic fable', ages: '3–8', mood: 'A treasured book from Grandma's shelf', img: 'assets/img/style-classic-fable', desc: 'Fine ink lines on aged paper — the heirloom storybooks you grew up on.' },
+    { id: 'fable', name: 'Classic fable', ages: '3–8', mood: "A treasured book from Grandma's shelf", img: 'assets/img/style-classic-fable', desc: 'Fine ink lines on aged paper — the heirloom storybooks you grew up on.' },
     { id: 'anim', name: '3D animated', ages: '4–10', mood: 'Their favourite movie', img: 'assets/img/styles/3d-animated', desc: 'Cinematic, glossy and bursting with colour, like stepping into an animated film.' },
     { id: 'papercut', name: 'Paper-cut', ages: '2–8', mood: 'A handmade pop-up book', img: 'assets/img/styles/papercut', desc: 'Layered paper worlds with real shadows, like a pop-up book come alive.' },
     { id: 'clay', name: 'Clay stop-motion', ages: '2–8', mood: 'A cosy claymation', img: 'assets/img/styles/clay', desc: 'Hand-sculpted characters in a tiny handmade world. Charming and tactile.' },
