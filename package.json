@@ -1,0 +1,15 @@
+{
+  "name": "custom-stories",
+  "version": "1.0.0",
+  "description": "Plain HTML, CSS and JavaScript. No build step or framework needed to deploy.",
+  "main": "process-images.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
+}

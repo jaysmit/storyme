@@ -191,11 +191,12 @@
   var STYLES = [
     { id: 'glow', name: 'Enchanted glow', ages: '3–10', mood: 'A premium modern picture book', img: 'assets/img/style-enchanted-glow', desc: 'Our signature look. Rich painted light, golden sparkles and starry skies — pure bedtime wonder.' },
     { id: 'watercolour', name: 'Watercolour dream', ages: '0–5', mood: 'A lullaby in pictures', img: 'assets/img/style-watercolour', desc: 'Soft washes and pastel skies that melt into the page. Gentle, calm and dreamy.' },
-    { id: 'fable', name: 'Classic fable', ages: '3–8', mood: 'A treasured book from Grandma’s shelf', img: 'assets/img/style-classic-fable', desc: 'Fine ink lines on aged paper — the heirloom storybooks you grew up on.' },
-    { id: 'anim', name: '3D animated', ages: '4–10', mood: 'Their favourite movie', img: '', file: 'style-3d-animated', desc: 'Cinematic, glossy and bursting with colour, like stepping into an animated film.' },
-    { id: 'papercut', name: 'Paper-cut', ages: '2–8', mood: 'A handmade pop-up book', img: '', file: 'style-papercut', desc: 'Layered paper worlds with real shadows, like a pop-up book come alive.' },
-    { id: 'clay', name: 'Clay stop-motion', ages: '2–8', mood: 'A cosy claymation', img: '', file: 'style-clay', desc: 'Hand-sculpted characters in a tiny handmade world. Charming and tactile.' },
-    { id: 'crayon', name: 'Crayon sketchbook', ages: '2–7', mood: 'Their own art, levelled up', img: '', file: 'style-crayon', desc: 'Bold wobbly lines and scribbled colour — just like their own drawings.' }
+    { id: 'fable', name: 'Classic fable', ages: '3–8', mood: 'A treasured book from Grandma's shelf', img: 'assets/img/style-classic-fable', desc: 'Fine ink lines on aged paper — the heirloom storybooks you grew up on.' },
+    { id: 'anim', name: '3D animated', ages: '4–10', mood: 'Their favourite movie', img: 'assets/img/styles/3d-animated', desc: 'Cinematic, glossy and bursting with colour, like stepping into an animated film.' },
+    { id: 'papercut', name: 'Paper-cut', ages: '2–8', mood: 'A handmade pop-up book', img: 'assets/img/styles/papercut', desc: 'Layered paper worlds with real shadows, like a pop-up book come alive.' },
+    { id: 'clay', name: 'Clay stop-motion', ages: '2–8', mood: 'A cosy claymation', img: 'assets/img/styles/clay', desc: 'Hand-sculpted characters in a tiny handmade world. Charming and tactile.' },
+    { id: 'lego', name: 'Brick world', ages: '4–12', mood: 'Everything is awesome', img: 'assets/img/styles/lego', desc: 'A blocky brick universe where your child becomes a mini-figure hero.' },
+    { id: 'silhouette', name: 'Shadow play', ages: '3–8', mood: 'A magical shadow puppet show', img: 'assets/img/styles/silhouette', desc: 'Elegant silhouettes against glowing backdrops — theatrical and timeless.' }
   ];
 
   document.querySelectorAll('[data-style-viewer]').forEach(function (viewer) {
