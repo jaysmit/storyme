@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StoryMe — Personalised picture books starring your child</title>
+  <meta name="description" content="Turn your child, siblings, friends and family into storybook characters with AI, then send them on a printed picture-book adventure.">
+  <meta name="theme-color" content="#14163A">
+  <meta property="og:title" content="StoryMe — Personalised picture books starring your child">
+  <meta property="og:description" content="Turn your child, siblings, friends and family into storybook characters with AI, then send them on a printed picture-book adventure.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,600..900,100,1;1,9..144,600..900,100,1&family=Kalam:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" data-sparkles>
+        <picture><source srcset="assets/img/hero.webp" type="image/webp"><img class="" src="assets/img/hero.jpg" alt="A smiling boy steps out of a photo and becomes an illustrated young wizard, walking into a glowing storybook with his family, a flying ship, a dragon and a castle" width="1672" height="941" fetchpriority="high"></picture>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <canvas class="sparkle-canvas" aria-hidden="true"></canvas>
+      </div>
+      <header class="site-header is-light">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="StoryMe home"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#1E1B4B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11c5-2 10-2 15 2v20c-5-4-10-4-15-2z"/><path d="M35 11c-5-2-10-2-15 2v20c5-4 10-4 15-2z"/><path d="M28 2l1.2 3 3 1.2-3 1.2L28 10.4l-1.2-3-3-1.2 3-1.2z" fill="#E0AE2C" stroke="#E0AE2C"/></svg><span>StoryMe</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="mobile-panel" id="site-menu">
+        <nav class="nav" aria-label="Main">
+          <a href="how-it-works.html">How the magic works</a>
+          <a href="art-styles.html">Art styles</a>
+          <a href="worlds.html">Worlds</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <a class="nav-login" href="login.html">Log in</a>
+          <a class="btn btn-gold header-cta" href="begin.html">Begin the adventure</a>
+        </div>
+      </div>
+    </div>
+  </header>
+      <div class="hero-body">
+        <div class="wrap">
+          <div class="hero-copy intro">
+            <span class="kicker">Once upon a time, starring…</span>
+            <h1 id="hero-title">Your child, <em>the hero</em> of their very own tale.</h1>
+            <p class="lede">Upload a photo and watch them become a storybook character. Gather siblings, friends and grandparents — then send the whole crew off on an adventure.</p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="begin.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4-11 11 5 5 11-11z"/><path d="M18 2v2M22 6h-2M20 2l-1 1"/></svg> Cast the first spell</a>
+              <a class="btn btn-ghost-ink" href="worlds.html">Explore worlds</a>
+            </div>
+            <ul class="checks">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0F8C7A" d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg> Free character preview · Up to [MAX] heroes per book</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0F8C7A" d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg> Printed and at your door in [X] days</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-deep" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="stack center reveal">
+          <span class="kicker">Chapter one</span>
+          <h2 class="h2" id="how-title">How the magic works</h2>
+        </div>
+        <div class="map">
+        <svg class="map-trail" viewBox="0 0 1280 120" preserveAspectRatio="none" fill="none" aria-hidden="true">
+          <path class="trail" d="M120 60 C260 -10 380 130 480 60 S700 -10 800 60 S1040 130 1160 60" stroke="#F4C95D" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+          <path d="M1150 48l14 12-14 12" stroke="#F4C95D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <ol class="steps">
+          <li class="step reveal reveal-d0">
+            <div class="step-badge" style="background:#FFD9C7"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1E1B4B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <span class="step-num">Step one</span>
+            <h3>Gather your crew</h3>
+            <p>Upload a photo of your child, then invite siblings, best friends, parents and grandparents to join the story.</p>
+          </li>
+          <li class="step reveal reveal-d1">
+            <div class="step-badge" style="background:#CFEFE8"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1E1B4B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4-11 11 5 5 11-11z"/><path d="M18 2v2M22 6h-2M20 2l-1 1"/></svg></div>
+            <span class="step-num">Step two</span>
+            <h3>Work the magic</h3>
+            <p>Our AI transforms each photo into a storybook character who still looks just like them.</p>
+          </li>
+          <li class="step reveal reveal-d2">
+            <div class="step-badge" style="background:#FFE39A"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1E1B4B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-1.7-1.3-2-2.5-2H16a2 2 0 0 1-2-2V6.5C14 4.3 13.7 3 12 3z"/><path d="M7.5 11.5h.01M10 7.5h.01M15.5 13.5h.01"/></svg></div>
+            <span class="step-num">Step three</span>
+            <h3>Pick an enchantment</h3>
+            <p>See your whole crew in seven art styles, from glowing painted magic to soft watercolour.</p>
+          </li>
+          <li class="step reveal reveal-d3">
+            <div class="step-badge" style="background:#E2DDF6"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1E1B4B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div>
+            <span class="step-num">Step four</span>
+            <h3>Choose the quest</h3>
+            <p>Send the whole crew into a world, give everyone a role, check every page, then order it printed.</p>
+          </li>
+        </ol>
+      </div>
+        <p class="center" style="margin-top:48px; text-align:center;"><a href="how-it-works.html" style="font-weight:800;">See the full journey</a></p>
+      </div>
+    </section>
+
+    <section class="section on-indigo" aria-labelledby="styles-title">
+      <div class="wrap">
+        <div class="stack reveal" style="max-width:760px;">
+          <span class="kicker">Chapter two</span>
+          <h2 class="h2" id="styles-title">Try on a different kind of magic</h2>
+          <p class="lede">One photo, seven enchantments. Pick a style and watch the same adventure transform before your eyes.</p>
+        </div>
+        <div data-style-viewer>
+        <div class="style-viewer">
+          <div class="style-stage" id="style-stage-h3" aria-live="polite">
+            <picture><source srcset="assets/img/style-enchanted-glow.webp" type="image/webp"><img class="" src="assets/img/style-enchanted-glow.jpg" alt="A young wizard on a hilltop above a river valley and castle, painted in the Enchanted glow style" width="1448" height="1086" loading="lazy" decoding="async"></picture>
+            <div class="style-soon"><strong style="color:#fff;" data-soon-file>[IMAGE]</strong><span>Coming soon</span></div>
+          </div>
+          <div class="style-info">
+            <span class="kicker" style="color:var(--text-mute)">Now showing</span>
+            <h3 class="h3" data-style-name>Enchanted glow</h3>
+            <p class="muted" data-style-desc>Our signature look. Rich painted light, golden sparkles and starry skies — pure bedtime wonder.</p>
+            <p class="muted" style="font-weight:800;">Best for ages <span data-style-ages>3–10</span></p>
+            <a class="btn btn-gold" href="begin.html" style="align-self:flex-start;">See my child in this style</a>
+          </div>
+        </div>
+        <div class="style-tabs" role="group" aria-label="Choose an art style"></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section on-teal" aria-labelledby="crew-title" style="overflow:hidden;">
+      <svg class="compass-bg" viewBox="0 0 24 24" fill="none" stroke="#5FC8B4" stroke-width=".4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="7"/><path d="M12 1v22M1 12h22M16 8l-2.5 5.5L8 16l2.5-5.5z"/></svg>
+      <div class="wrap split">
+        <div class="stack reveal">
+          <span class="kicker" style="color:#9FE3D6">Chapter three</span>
+          <h2 class="h2" id="crew-title">Every great quest needs a crew.</h2>
+          <p class="lede" style="color:#CDE6E2">Siblings, best mates, Nan and even the dog. Choose one hero, then hand out the parts — trusty sidekick, ship’s navigator, dragon-whisperer — and watch them turn up on every page that matters.</p>
+          <a class="btn btn-gold" href="begin.html" style="align-self:flex-start">Assemble my crew</a>
+        </div>
+        <div class="reveal reveal-d2"><div class="crew-card">
+          <header><strong>The crew</strong><span>3 of [MAX] aboard</span></header>
+          <div class="crew-row"><span class="crew-avatar c-peach">M</span><div><strong>Mia</strong><small>Age 8 · Photo uploaded</small></div><span class="crew-tag c-peach">Hero</span></div>
+          <div class="crew-row"><span class="crew-avatar c-mint">L</span><div><strong>Leo</strong><small>Age 5 · Brother</small></div><span class="crew-tag c-mint">Sidekick</span></div>
+          <div class="crew-row"><span class="crew-avatar c-lilac">N</span><div><strong>Nan</strong><small>Grandma</small></div><span class="crew-tag c-lilac">Wise wizard</span></div>
+          <a class="crew-add" href="begin.html" style="text-align:center; text-decoration:none;">+ Recruit another adventurer</a>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="worlds-title">
+      <div class="wrap">
+        <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:48px;">
+          <div class="stack"><span class="kicker">Chapter four</span><h2 class="h2" id="worlds-title">Choose a world to explore</h2></div>
+          <a href="worlds.html" style="font-weight:800;">See every world</a>
+        </div>
+        <div class="grid-3">
+        <article class="world reveal reveal-d0" data-min="3" data-max="7">
+          <div class="world-cover" style="--cover:#2A2470; --cover-ink:#FFE39A;">
+            <!-- Add a cover: <img src="assets/img/world-moon-borrowers.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#FFE39A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14A8 8 0 1 1 10 4a6 6 0 0 0 10 10z"/></svg>
+            <span class="pill">1–3 heroes</span>
+            <h3>The Moon Borrowers</h3>
+          </div>
+          <div class="world-body">
+            <p>The moon vanishes the night before a big birthday. Only one crew can bring it home.</p>
+            <ul class="tags" aria-label="Themes"><li>Bedtime</li><li>Space</li></ul>
+            <div class="world-foot"><span>Ages 3–7 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: The Moon Borrowers</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d1" data-min="4" data-max="8">
+          <div class="world-cover" style="--cover:#B8431F; --cover-ink:#FFF4E6;">
+            <!-- Add a cover: <img src="assets/img/world-dragon-day.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#FFF4E6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 3 6 5 6 10a6 6 0 0 1-12 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4 2-6 2-9z"/></svg>
+            <span class="pill">1–4 heroes</span>
+            <h3>Dragon Day at School</h3>
+          </div>
+          <div class="world-body">
+            <p>Show-and-tell goes sideways when a very small dragon hatches in the classroom.</p>
+            <ul class="tags" aria-label="Themes"><li>Funny</li><li>School</li></ul>
+            <div class="world-foot"><span>Ages 4–8 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: Dragon Day at School</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d2" data-min="3" data-max="7">
+          <div class="world-cover" style="--cover:#0F4C5C; --cover-ink:#DFF7F2;">
+            <!-- Add a cover: <img src="assets/img/world-kelp-forest.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#DFF7F2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
+            <span class="pill">1–3 heroes</span>
+            <h3>Under the Kelp Forest</h3>
+          </div>
+          <div class="world-body">
+            <p>A snorkel trip becomes a daring rescue for a lost baby sea turtle.</p>
+            <ul class="tags" aria-label="Themes"><li>Ocean</li><li>Kindness</li></ul>
+            <div class="world-foot"><span>Ages 3–7 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: Under the Kelp Forest</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d0" data-min="4" data-max="9">
+          <div class="world-cover" style="--cover:#F4C95D; --cover-ink:#1E1B4B;">
+            <!-- Add a cover: <img src="assets/img/world-backyard-expedition.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#1E1B4B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
+            <span class="pill">2–5 heroes</span>
+            <h3>The Great Backyard Expedition</h3>
+          </div>
+          <div class="world-body">
+            <p>Map, torch, snacks. The backyard turns out to be much bigger after dark.</p>
+            <ul class="tags" aria-label="Themes"><li>Siblings</li><li>Nature</li></ul>
+            <div class="world-foot"><span>Ages 4–9 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: The Great Backyard Expedition</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d1" data-min="5" data-max="10">
+          <div class="world-cover" style="--cover:#6E9BD8; --cover-ink:#14163A;">
+            <!-- Add a cover: <img src="assets/img/world-cloud-ship.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#14163A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16h20l-3 5H5z"/><path d="M12 16V3l7 10h-7M12 5 6 13h6"/></svg>
+            <span class="pill">1–4 heroes</span>
+            <h3>Captain of the Cloud Ship</h3>
+          </div>
+          <div class="world-body">
+            <p>Your little one takes the helm of a flying ship, with family as the crew.</p>
+            <ul class="tags" aria-label="Themes"><li>Family</li><li>Adventure</li></ul>
+            <div class="world-foot"><span>Ages 5–10 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: Captain of the Cloud Ship</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d2" data-min="3" data-max="8">
+          <div class="world-cover" style="--cover:#6A3E8C; --cover-ink:#FCE7FF;">
+            <!-- Add a cover: <img src="assets/img/world-endless-birthday.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#FCE7FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V11h14v10zM3 21h18M12 11V7"/><path d="M12 7c-1-1-1-3 0-4 1 1 1 3 0 4z"/></svg>
+            <span class="pill">1–6 heroes</span>
+            <h3>The Birthday That Wouldn’t End</h3>
+          </div>
+          <div class="world-body">
+            <p>A wish goes wrong and the party repeats forever — until friends crack the clue.</p>
+            <ul class="tags" aria-label="Themes"><li>Birthday</li><li>Friends</li></ul>
+            <div class="world-foot"><span>Ages 3–8 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: The Birthday That Wouldn’t End</span></a></div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-cream" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="stack center reveal" style="margin-bottom:56px;">
+          <span class="kicker">Chapter five</span>
+          <h2 class="h2" id="pricing-title">Peek for free. Pay when you’re spellbound.</h2>
+        </div>
+        <div class="plans">
+        <article class="plan">
+          <div class="plan-img"><!-- Replace with: <img src="assets/img/price-digital.jpg" alt="" loading="lazy"> -->[IMAGE: price-digital.jpg]</div>
+          <div class="plan-body">
+            <span class="plan-tag">Take a peek</span>
+            <h3>Digital book</h3>
+            <p class="price">[YOUR PRICE]</p>
+            <ul class="feature-list"><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Free character preview in all styles</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Full illustrated PDF, ready instantly</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Up to [MAX] heroes</span></li></ul>
+            <a class="btn btn-navy btn-block" href="begin.html">Start free preview</a>
+          </div>
+        </article>
+        <article class="plan is-featured">
+          <div class="plan-img"><!-- Replace with: <img src="assets/img/price-hardcover.jpg" alt="" loading="lazy"> -->[IMAGE: price-hardcover.jpg]</div>
+          <div class="plan-body">
+            <span class="plan-tag">Most loved</span>
+            <h3>Hardcover</h3>
+            <p class="price">[YOUR PRICE]</p>
+            <ul class="feature-list"><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Everything in Digital</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Premium printed hardcover</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Personalised dedication page</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>At your door in [X] days</span></li></ul>
+            <a class="btn btn-gold btn-block" href="begin.html">Create my hardcover</a>
+          </div>
+        </article>
+        <article class="plan">
+          <div class="plan-img"><!-- Replace with: <img src="assets/img/price-treasure-chest.jpg" alt="" loading="lazy"> -->[IMAGE: price-treasure-chest.jpg]</div>
+          <div class="plan-body">
+            <span class="plan-tag">For gifting</span>
+            <h3>Treasure chest</h3>
+            <p class="price">[YOUR PRICE]</p>
+            <ul class="feature-list"><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Everything in Hardcover</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Keepsake gift box</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Character poster print</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><span>Gift message and chosen delivery date</span></li></ul>
+            <a class="btn btn-navy btn-block" href="begin.html">Build a gift set</a>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="section on-cream" aria-labelledby="faq-title" style="padding-top:0;">
+      <div class="wrap faq-layout wide-left">
+        <div class="stack"><span class="kicker">Before you set sail</span><h2 class="h2" id="faq-title">Questions from fellow adventurers</h2><a href="faq.html" style="font-weight:800;">All questions</a></div>
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <button class="faq-q" type="button" aria-expanded="true" aria-controls="faq-a-0" id="faq-q-0"><span>What happens to the photos I upload?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4C95D" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a" id="faq-a-0" role="region" aria-labelledby="faq-q-0"><div><p>[YOUR POLICY] — for example: photos are used only to create your characters, stored securely, and deleted after [X] days. They are never used to train AI models or shared with anyone.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1"><span>What kind of photo works best?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4C95D" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1"><div><p>A recent, well-lit, front-facing photo with the whole face visible. Avoid sunglasses, hats and group shots — upload one photo per person.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2"><span>How many people can join one adventure?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4C95D" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2"><div><p>Each world lists how many heroes it holds. Most take between one and [MAX] — siblings, friends, parents and grandparents are all welcome.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3"><span>Can I see the whole book before ordering?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4C95D" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3"><div><p>Yes. Flip through every page with your crew in place, and swap styles or characters before you pay.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4"><span>How long does delivery take?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4C95D" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4"><div><p>Digital books are ready straight away. Printed books ship within [X] business days; delivery time depends on your location.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" aria-labelledby="cta-title">
+      <div class="starfield" data-stars="60" aria-hidden="true"></div>
+      <div class="wrap inner">
+        <svg class="moon floaty" width="64" height="64" viewBox="0 0 70 70" aria-hidden="true"><path d="M48 8a28 28 0 1 0 14 40A24 24 0 0 1 48 8z" fill="#F4C95D"/></svg>
+        <h2 id="cta-title">Tonight’s bedtime story could star <em>them.</em></h2>
+        <p class="lede">Upload one photo. The first glimpse of magic is on us.</p>
+        <a class="btn btn-gold btn-lg" href="begin.html">Turn the first page</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="stack" style="gap:10px; max-width: 340px;">
+        <a class="logo" href="index.html" aria-label="StoryMe home"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11c5-2 10-2 15 2v20c-5-4-10-4-15-2z"/><path d="M35 11c-5-2-10-2-15 2v20c5-4 10-4 15-2z"/><path d="M28 2l1.2 3 3 1.2-3 1.2L28 10.4l-1.2-3-3-1.2 3-1.2z" fill="#E0AE2C" stroke="#E0AE2C"/></svg><span>StoryMe</span></a>
+        <p>Picture books where the people you love are the heroes.</p>
+        <p style="font-size:13px;">© <span data-year>2026</span> [COMPANY NAME] · ABN [ABN]</p>
+      </div>
+      <div class="footer-cols">
+        <div><h2>Explore</h2><ul>
+          <li><a href="how-it-works.html">How the magic works</a></li>
+          <li><a href="art-styles.html">Art styles</a></li>
+          <li><a href="worlds.html">Worlds</a></li>
+        </ul></div>
+        <div><h2>Help</h2><ul>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="mailto:[SUPPORT EMAIL]">Contact</a></li>
+        </ul></div>
+        <div><h2>Legal</h2><ul>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+          <li><a href="#shipping">Shipping</a></li>
+        </ul></div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

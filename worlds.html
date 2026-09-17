@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Worlds | StoryMe</title>
+  <meta name="description" content="Pick a story world for your crew — lost moons, classroom dragons, kelp forests, cloud ships and more.">
+  <meta name="theme-color" content="#14163A">
+  <meta property="og:title" content="Worlds | StoryMe">
+  <meta property="og:description" content="Pick a story world for your crew — lost moons, classroom dragons, kelp forests, cloud ships and more.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,600..900,100,1;1,9..144,600..900,100,1&family=Kalam:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header is-dark">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="StoryMe home"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#F3F0FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11c5-2 10-2 15 2v20c-5-4-10-4-15-2z"/><path d="M35 11c-5-2-10-2-15 2v20c5-4 10-4 15-2z"/><path d="M28 2l1.2 3 3 1.2-3 1.2L28 10.4l-1.2-3-3-1.2 3-1.2z" fill="#E0AE2C" stroke="#E0AE2C"/></svg><span>StoryMe</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="mobile-panel" id="site-menu">
+        <nav class="nav" aria-label="Main">
+          <a href="how-it-works.html">How the magic works</a>
+          <a href="art-styles.html">Art styles</a>
+          <a href="worlds.html" aria-current="page">Worlds</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <a class="nav-login" href="login.html">Log in</a>
+          <a class="btn btn-gold header-cta" href="begin.html">Begin the adventure</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="page-intro" aria-labelledby="t">
+      <div class="starfield" data-stars="40" aria-hidden="true"></div>
+      <div class="wrap"><div class="stack intro">
+        <span class="kicker">Where to next?</span>
+        <h1 class="h1" id="t">Choose a world to explore</h1>
+        <p class="lede" style="max-width:56ch">Every world is written so your crew are the heroes — not background extras. Pick one that matches their age and their wildest daydreams.</p>
+      </div></div>
+    </section>
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="chips" data-world-filter role="group" aria-label="Filter worlds by age" style="margin-bottom:32px;">
+          <span style="font-weight:800; color:var(--text-mute); margin-right:6px;">Ages</span>
+          <button class="chip" type="button" aria-pressed="true" data-age="all">All</button>
+          <button class="chip" type="button" aria-pressed="false" data-age="3">Under 4</button>
+          <button class="chip" type="button" aria-pressed="false" data-age="5">4–6</button>
+          <button class="chip" type="button" aria-pressed="false" data-age="8">7 and up</button>
+          <span style="margin-left:auto; color:var(--text-mute);" data-world-count aria-live="polite">6 worlds</span>
+        </div>
+        <div class="grid-3">
+        <article class="world reveal reveal-d0" data-min="3" data-max="7">
+          <div class="world-cover" style="--cover:#2A2470; --cover-ink:#FFE39A;">
+            <!-- Add a cover: <img src="assets/img/world-moon-borrowers.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#FFE39A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14A8 8 0 1 1 10 4a6 6 0 0 0 10 10z"/></svg>
+            <span class="pill">1–3 heroes</span>
+            <h3>The Moon Borrowers</h3>
+          </div>
+          <div class="world-body">
+            <p>The moon vanishes the night before a big birthday. Only one crew can bring it home.</p>
+            <ul class="tags" aria-label="Themes"><li>Bedtime</li><li>Space</li></ul>
+            <div class="world-foot"><span>Ages 3–7 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: The Moon Borrowers</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d1" data-min="4" data-max="8">
+          <div class="world-cover" style="--cover:#B8431F; --cover-ink:#FFF4E6;">
+            <!-- Add a cover: <img src="assets/img/world-dragon-day.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#FFF4E6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 3 6 5 6 10a6 6 0 0 1-12 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4 2-6 2-9z"/></svg>
+            <span class="pill">1–4 heroes</span>
+            <h3>Dragon Day at School</h3>
+          </div>
+          <div class="world-body">
+            <p>Show-and-tell goes sideways when a very small dragon hatches in the classroom.</p>
+            <ul class="tags" aria-label="Themes"><li>Funny</li><li>School</li></ul>
+            <div class="world-foot"><span>Ages 4–8 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: Dragon Day at School</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d2" data-min="3" data-max="7">
+          <div class="world-cover" style="--cover:#0F4C5C; --cover-ink:#DFF7F2;">
+            <!-- Add a cover: <img src="assets/img/world-kelp-forest.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#DFF7F2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
+            <span class="pill">1–3 heroes</span>
+            <h3>Under the Kelp Forest</h3>
+          </div>
+          <div class="world-body">
+            <p>A snorkel trip becomes a daring rescue for a lost baby sea turtle.</p>
+            <ul class="tags" aria-label="Themes"><li>Ocean</li><li>Kindness</li></ul>
+            <div class="world-foot"><span>Ages 3–7 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: Under the Kelp Forest</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d0" data-min="4" data-max="9">
+          <div class="world-cover" style="--cover:#F4C95D; --cover-ink:#1E1B4B;">
+            <!-- Add a cover: <img src="assets/img/world-backyard-expedition.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#1E1B4B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
+            <span class="pill">2–5 heroes</span>
+            <h3>The Great Backyard Expedition</h3>
+          </div>
+          <div class="world-body">
+            <p>Map, torch, snacks. The backyard turns out to be much bigger after dark.</p>
+            <ul class="tags" aria-label="Themes"><li>Siblings</li><li>Nature</li></ul>
+            <div class="world-foot"><span>Ages 4–9 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: The Great Backyard Expedition</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d1" data-min="5" data-max="10">
+          <div class="world-cover" style="--cover:#6E9BD8; --cover-ink:#14163A;">
+            <!-- Add a cover: <img src="assets/img/world-cloud-ship.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#14163A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16h20l-3 5H5z"/><path d="M12 16V3l7 10h-7M12 5 6 13h6"/></svg>
+            <span class="pill">1–4 heroes</span>
+            <h3>Captain of the Cloud Ship</h3>
+          </div>
+          <div class="world-body">
+            <p>Your little one takes the helm of a flying ship, with family as the crew.</p>
+            <ul class="tags" aria-label="Themes"><li>Family</li><li>Adventure</li></ul>
+            <div class="world-foot"><span>Ages 5–10 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: Captain of the Cloud Ship</span></a></div>
+          </div>
+        </article>
+        <article class="world reveal reveal-d2" data-min="3" data-max="8">
+          <div class="world-cover" style="--cover:#6A3E8C; --cover-ink:#FCE7FF;">
+            <!-- Add a cover: <img src="assets/img/world-endless-birthday.jpg" alt=""> + <span class="scrim"></span> and class="world-cover has-img" -->
+            <svg class="motif" viewBox="0 0 24 24" fill="none" stroke="#FCE7FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V11h14v10zM3 21h18M12 11V7"/><path d="M12 7c-1-1-1-3 0-4 1 1 1 3 0 4z"/></svg>
+            <span class="pill">1–6 heroes</span>
+            <h3>The Birthday That Wouldn’t End</h3>
+          </div>
+          <div class="world-body">
+            <p>A wish goes wrong and the party repeats forever — until friends crack the clue.</p>
+            <ul class="tags" aria-label="Themes"><li>Birthday</li><li>Friends</li></ul>
+            <div class="world-foot"><span>Ages 3–8 · [PAGES] pages</span><a href="begin.html">Enter this world<span class="sr-only">: The Birthday That Wouldn’t End</span></a></div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="banner reveal">
+          <div class="stack" style="gap:10px; max-width:760px;">
+            <span class="kicker">New worlds are being written</span>
+            <h2 class="h2" style="font-size:clamp(30px,3.2vw,44px)">Got a world your kids would love?</h2>
+            <p>Dinosaurs, space stations, footy grand finals — tell us what they’re obsessed with and we’ll add it to the list.</p>
+          </div>
+          <a class="btn btn-navy" href="begin.html">Suggest a world</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="stack" style="gap:10px; max-width: 340px;">
+        <a class="logo" href="index.html" aria-label="StoryMe home"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11c5-2 10-2 15 2v20c-5-4-10-4-15-2z"/><path d="M35 11c-5-2-10-2-15 2v20c5-4 10-4 15-2z"/><path d="M28 2l1.2 3 3 1.2-3 1.2L28 10.4l-1.2-3-3-1.2 3-1.2z" fill="#E0AE2C" stroke="#E0AE2C"/></svg><span>StoryMe</span></a>
+        <p>Picture books where the people you love are the heroes.</p>
+        <p style="font-size:13px;">© <span data-year>2026</span> [COMPANY NAME] · ABN [ABN]</p>
+      </div>
+      <div class="footer-cols">
+        <div><h2>Explore</h2><ul>
+          <li><a href="how-it-works.html">How the magic works</a></li>
+          <li><a href="art-styles.html">Art styles</a></li>
+          <li><a href="worlds.html">Worlds</a></li>
+        </ul></div>
+        <div><h2>Help</h2><ul>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="mailto:[SUPPORT EMAIL]">Contact</a></li>
+        </ul></div>
+        <div><h2>Legal</h2><ul>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+          <li><a href="#shipping">Shipping</a></li>
+        </ul></div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

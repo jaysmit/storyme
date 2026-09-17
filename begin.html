@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join the shortlist | StoryMe</title>
+  <meta name="description" content="Join the StoryMe shortlist for early access to personalised picture books starring your child.">
+  <meta name="theme-color" content="#14163A">
+  <meta property="og:title" content="Join the shortlist | StoryMe">
+  <meta property="og:description" content="Join the StoryMe shortlist for early access to personalised picture books starring your child.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,600..900,100,1;1,9..144,600..900,100,1&family=Kalam:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header is-dark">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="StoryMe home"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#F3F0FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11c5-2 10-2 15 2v20c-5-4-10-4-15-2z"/><path d="M35 11c-5-2-10-2-15 2v20c5-4 10-4 15-2z"/><path d="M28 2l1.2 3 3 1.2-3 1.2L28 10.4l-1.2-3-3-1.2 3-1.2z" fill="#E0AE2C" stroke="#E0AE2C"/></svg><span>StoryMe</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="mobile-panel" id="site-menu">
+        <nav class="nav" aria-label="Main">
+          <a href="how-it-works.html">How the magic works</a>
+          <a href="art-styles.html">Art styles</a>
+          <a href="worlds.html">Worlds</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <a class="nav-login" href="login.html">Log in</a>
+          <a class="btn btn-gold header-cta" href="begin.html">Begin the adventure</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="section" style="overflow:hidden; padding-top:clamp(48px,7vw,88px);">
+      <div class="starfield" data-stars="50" aria-hidden="true"></div>
+      <img class="bg-hero-faint" src="assets/img/hero.jpg" alt="" width="1672" height="941">
+      <div class="wrap shortlist">
+        <div class="stack intro" style="gap:22px; padding-top:12px;">
+          <span class="kicker">The first chapter opens soon</span>
+          <h1 class="h1">Join the shortlist</h1>
+          <p class="lede">StoryMe is almost ready. Add your name and you’ll be among the first families to turn their kids into storybook heroes.</p>
+          <ul class="perks"><li><span class="perk-icon"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F4C95D" d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg></span><div><strong>First in line</strong><span>Early access before public launch.</span></div></li><li><span class="perk-icon"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F4C95D" d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg></span><div><strong>Founding family pricing</strong><span>[LAUNCH OFFER] on your first book.</span></div></li><li><span class="perk-icon"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F4C95D" d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg></span><div><strong>Shape the stories</strong><span>Vote on the next worlds and art styles we create.</span></div></li></ul>
+        </div>
+
+        <div class="form-card">
+          <!--
+            FORM SETUP — choose one:
+            • Netlify: keep data-netlify="true" and set data-endpoint="netlify".
+            • Formspree / Basin / your API: set data-endpoint="https://formspree.io/f/XXXX".
+            • Leave data-endpoint empty for demo mode (shows success, sends nothing).
+          -->
+          <form name="shortlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-shortlist data-endpoint="" novalidate class="stack" style="gap:20px;">
+            <input type="hidden" name="form-name" value="shortlist">
+            <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+            <h2 class="h3" style="font-size:32px;">Save your spot</h2>
+            <div class="form-grid">
+              <div class="field"><label for="sl-name">Your first name</label><input id="sl-name" name="parent_name" type="text" autocomplete="given-name" placeholder="Sam" aria-describedby="sl-name-error" required><span class="field-error" id="sl-name-error"></span></div>
+              <div class="field"><label for="sl-hero">Your hero’s name <span style="font-weight:600; color:#6B6585;">(optional)</span></label><input id="sl-hero" name="hero_name" type="text" placeholder="Mia"></div>
+            </div>
+            <div class="field"><label for="sl-email">Email</label><input id="sl-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="sl-email-error" required><span class="field-error" id="sl-email-error"></span></div>
+            <div class="field">
+              <span class="field-label" id="age-label">Hero’s age</span>
+              <div class="chips" data-chip-group="single" role="group" aria-labelledby="age-label"><button class="chip chip-solid" type="button" aria-pressed="false" data-value="0–3">0–3</button><button class="chip chip-solid" type="button" aria-pressed="true" data-value="4–7">4–7</button><button class="chip chip-solid" type="button" aria-pressed="false" data-value="8–10">8–10</button><button class="chip chip-solid" type="button" aria-pressed="false" data-value="10+">10+</button><input type="hidden" name="hero_age" value="4–7"></div>
+            </div>
+            <div class="field">
+              <span class="field-label" id="style-label">Styles you love <span style="font-weight:600; color:#6B6585;">(pick any)</span></span>
+              <div class="chips" data-chip-group="multi" role="group" aria-labelledby="style-label" style="gap:8px;"><button class="chip" type="button" aria-pressed="true" data-value="Enchanted glow">Enchanted glow</button><button class="chip" type="button" aria-pressed="false" data-value="Watercolour dream">Watercolour dream</button><button class="chip" type="button" aria-pressed="false" data-value="Classic fable">Classic fable</button><button class="chip" type="button" aria-pressed="false" data-value="3D animated">3D animated</button><button class="chip" type="button" aria-pressed="false" data-value="Paper-cut">Paper-cut</button><button class="chip" type="button" aria-pressed="false" data-value="Clay stop-motion">Clay stop-motion</button><button class="chip" type="button" aria-pressed="false" data-value="Crayon sketchbook">Crayon sketchbook</button><input type="hidden" name="styles" value="Enchanted glow"></div>
+            </div>
+            <label class="consent"><input type="checkbox" name="updates" value="yes"> <span>Send me launch updates. Unsubscribe anytime. See our <a href="#privacy">privacy policy</a>.</span></label>
+            <button class="btn btn-navy btn-lg btn-block" type="submit"><span style="color:var(--gold); display:inline-flex;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4-11 11 5 5 11-11z"/><path d="M18 2v2M22 6h-2M20 2l-1 1"/></svg></span> Add me to the shortlist</button>
+            <p class="form-status" role="alert"></p>
+          </form>
+
+          <div class="success" data-shortlist-success hidden>
+            <svg class="moon floaty" width="84" height="84" viewBox="0 0 70 70" aria-hidden="true"><path d="M48 8a28 28 0 1 0 14 40A24 24 0 0 1 48 8z" fill="#E0AE2C"/></svg>
+            <span class="kicker" style="color:var(--ember-ink)">The spell is cast!</span>
+            <h2 class="h3" tabindex="-1" style="font-size:40px;">You’re on the shortlist</h2>
+            <p style="color:var(--ink-soft); max-width:40ch;">We’ll email you the moment the first chapter opens. Want to jump the queue? Share your link with friends.</p>
+            <div class="copy-row">
+              <label class="sr-only" for="ref-link">Your referral link</label>
+              <input id="ref-link" type="text" readonly value="[YOUR REFERRAL LINK]">
+              <button class="btn btn-navy" type="button" data-copy="ref-link">Copy</button>
+            </div>
+            <button class="link-btn" type="button" data-shortlist-again>Add another hero</button>
+            <a href="worlds.html" style="font-weight:800; color:var(--ink);">Explore the worlds while you wait</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="stack" style="gap:10px; max-width: 340px;">
+        <a class="logo" href="index.html" aria-label="StoryMe home"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11c5-2 10-2 15 2v20c-5-4-10-4-15-2z"/><path d="M35 11c-5-2-10-2-15 2v20c5-4 10-4 15-2z"/><path d="M28 2l1.2 3 3 1.2-3 1.2L28 10.4l-1.2-3-3-1.2 3-1.2z" fill="#E0AE2C" stroke="#E0AE2C"/></svg><span>StoryMe</span></a>
+        <p>Picture books where the people you love are the heroes.</p>
+        <p style="font-size:13px;">© <span data-year>2026</span> [COMPANY NAME] · ABN [ABN]</p>
+      </div>
+      <div class="footer-cols">
+        <div><h2>Explore</h2><ul>
+          <li><a href="how-it-works.html">How the magic works</a></li>
+          <li><a href="art-styles.html">Art styles</a></li>
+          <li><a href="worlds.html">Worlds</a></li>
+        </ul></div>
+        <div><h2>Help</h2><ul>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="mailto:[SUPPORT EMAIL]">Contact</a></li>
+        </ul></div>
+        <div><h2>Legal</h2><ul>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+          <li><a href="#shipping">Shipping</a></li>
+        </ul></div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
